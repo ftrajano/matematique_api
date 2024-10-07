@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Study App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar-left {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar-right {
+            flex: 2;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+        .box {
+            background-color: #3c3c3c;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .box-header {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .box-header button {
+            background-color: #4a4a4a;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .box-header button:hover {
+            background-color: #5a5a5a;
+        }
+        .box-content {
+            background-color: #2b2b2b;
+            padding: 10px;
+            border-radius: 4px;
+            height: 300px; /* Adjust height as needed */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar-left">
+            <section id="user-progress">
+                <h3>User Progress</h3>
+                <!-- Content for user progress -->
+            </section>
+            <section id="recent-activities">
+                <h3>Recent Activities</h3>
+                <!-- Content for recent activities -->
+            </section>
+        </aside>
+
+        <div class="main-content">
+            <h1>Welcome to Math Study App</h1>
+            <section id="study-materials">
+                <h2>Study Materials</h2>
+                <!-- Content for study materials -->
+            </section>
+            <section id="problem-sets">
+                <h2>Problem Sets</h2>
+                <!-- Content for problem sets -->
+            </section>
+            <section id="solutions">
+                <h2>Solutions</h2>
+                <!-- Content for solutions -->
+				<img src="../../../questoes/200.png" alt="">
+            </section>
+        </div>
+
+        <aside class="sidebar-right">
+            <div class="box">
+                <div class="box-header">
+                    <button>Analysis</button>
+                    <button>New Game</button>
+                    <button>Games</button>
+                    <button>Players</button>
+                </div>
+                <div class="box-content">
+                    <!-- Space for some text -->
+                    <p>Content goes here...</p>
+                </div>
+            </div>
+            <section id="study-groups">
+                <h3>Study Groups</h3>
+                <!-- Content for study groups -->
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
